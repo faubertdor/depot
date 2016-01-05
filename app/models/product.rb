@@ -6,4 +6,8 @@ class Product < ActiveRecord::Base
   validates :image_url, allow_blank: true, format: {
     with:    /\.(gif|jpg|png)\Z/i,
     message: 'must be one of the following extensions: gif, jpg, png' }
+  
+  def self.latest
+    Product.order(:updated_at).last
+  end
 end

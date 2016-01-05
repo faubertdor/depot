@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#banner {
+    background: #9c9;
+    padding: 10px;
+    border-bottom: 2px solid;
+    font: small-caps 40px/40px "Times New Roman", serif;
+    color: #282;
+    text-align: center;
+    
+    #logo {
+        float: left;
+    }
+    
+    .home_title {
+        a {
+            color: white;
+            background: #9c9;
+            font-weight: bold;
+            &:hover {
+                    color: white;
+                    background: #9c9;
+                    text-decoration: none;
+            }
+        }
+    }
+}
+
+#notice {
+    color: #000 !important;
+    border: 2px solid red;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #f0f0f0;
+    font: bold smaller sans-serif;
+}
+
+body {
+    padding-top: 120px;
+}
+
+#columns {
+    background: #141;
+    #main {
+        margin-left: 17em;
+        padding: 1em;
+        margin-top: 80px;
+        background: white;
+    }
+    
+    #side {
+        padding: 1em 2em;
+        width: 13em;
+        background: #141;
+    }
+    
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            font-size: small;
+        }
+    }
+}
+
+/* footer */
+
+footer {
+    margin-top: 50px;
+    padding-top: 5px;
+    border-top: 1.5px solid;
+    
+    small {
+        float: left;
+    }
+    
+    a {
+        color: blue;
+        background: white;
+        &:hover {
+            color: blue;
+            background: white;
+        }
+    }
+    
+    ul {
+        float: right;
+        list-style: none;
+        
+        li {
+            float: left;
+            margin-left: 15px;
+        }
+    }
+}

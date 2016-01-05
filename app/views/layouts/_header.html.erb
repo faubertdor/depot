@@ -1,0 +1,16 @@
+<header id="banner", class="navbar navbar-fixed-top">
+  <div id="logo">
+    <%= link_to(image_tag("cs.png", alt: "logo", height: "80", width: "90"), root_path) %>
+  </div>
+  <div class="home_title">
+    <%= link_to(@page_title || "Pragmatic Bookshelf", root_path) %>
+  </div>
+  <nav>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Questions", "#" %></li>
+      <li><%= link_to "News", "#" %></li>
+      <li><%= link_to "Contact", "#" %></li>
+    </ul>
+  </nav>
+</header>
